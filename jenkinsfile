@@ -63,11 +63,9 @@ pipeline {
 
         stage('Deploy (Optional)') {
             steps {
-                script {
-                    // Deploy logic using 'docker-compose up -d' or other deployment tools
-                }
+                sh 'docker-compose up -d'
             }
         }
 
     }
-}
+} 
